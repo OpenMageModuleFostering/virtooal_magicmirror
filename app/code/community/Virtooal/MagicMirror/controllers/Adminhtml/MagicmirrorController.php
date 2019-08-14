@@ -36,7 +36,7 @@
 		{
 			$this->loadLayout()->_setActiveMenu('virtooal_magicmirror_tab')->_title($this->__('Magic Mirror Admin'));
 			$langcode = Mage::getStoreConfig('magicmirror_options/magicmirror_settings/magicmirror_language');
-			$html = '<iframe src="http://setup.virtooal.com/'.$langcode.'/auth/index?url='.
+			$html = '<iframe src="https://setup.virtooal.com/'.$langcode.'/auth/index?url='.
 					rawurlencode(Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB)).
 					'&platform=magento" frameborder="0" width="100%" style="min-height: 1000px"></iframe>';
 			$block = $this->getLayout()
@@ -73,7 +73,7 @@
 							<li>'.$this->__('Copy your API key and username into Magic Mirror > Configuration').'</li>
 						</ol>
 						<br />
-						<p><strong>Products integration').':</strong></p>
+						<p><strong>Products integration'.':</strong></p>
 						<ol style="list-style-type: decimal; margin-left: 30px;">
 							<li>'.$this->__('Go to Catalog > Manage Products and choose one of your products').'</li>
 							<li>'.$this->__('On the left side navigation click on "Add Magic Mirror"').'</li>
