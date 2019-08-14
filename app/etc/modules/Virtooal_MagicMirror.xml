@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Virtooal_MagicMirror>
+			<active>true</active>
+			<codePool>community</codePool>
+		</Virtooal_MagicMirror>
+	</modules>
+</config>

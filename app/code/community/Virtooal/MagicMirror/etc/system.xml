@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<config>
+	<tabs>
+		<magicmirrorconfig translate="label" module="virtooal_magicmirror">
+			<label>Virtooal</label>
+			<sort_order>1</sort_order>
+		</magicmirrorconfig>
+	</tabs>
+	<sections>
+		<magicmirror_options translate="label" module="virtooal_magicmirror">
+			<label>Magic Mirror Configuration</label>
+			<tab>magicmirrorconfig</tab>
+			<frontend_type>text</frontend_type>
+			<sort_order>1000</sort_order>
+			<show_in_default>1</show_in_default>
+			<show_in_website>1</show_in_website>
+			<show_in_store>1</show_in_store>
+			<groups>
+                <magicmirror_settings translate="label">
+                    <label>Magic Mirror Widget Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store> 
+                    <fields>
+                    	<magicmirror_enable translate="label">
+                            <label>Enable extension</label>
+                            <frontend_type>select</frontend_type>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                        </magicmirror_enable>
+				        <magicmirror_apikey translate="label">
+				            <label>Virtooal API key</label>
+				            <frontend_type>text</frontend_type>
+				            <sort_order>20</sort_order>
+				            <show_in_default>1</show_in_default>
+				            <show_in_website>1</show_in_website>
+				            <show_in_store>1</show_in_store>                    
+				        </magicmirror_apikey>
+				        <magicmirror_username translate="label">
+				            <label>Virtooal user name</label>
+				            <frontend_type>text</frontend_type>
+				            <sort_order>30</sort_order>
+				            <show_in_default>1</show_in_default>
+				            <show_in_website>1</show_in_website>
+				            <show_in_store>1</show_in_store>                    
+				        </magicmirror_username>
+				        <magicmirror_position translate="label">
+				            <label>Widget position</label>
+				            <frontend_type>select</frontend_type>
+				            <source_model>virtooal_magicmirror/position</source_model>     
+				            <sort_order>40</sort_order>
+				            <show_in_default>1</show_in_default>
+				            <show_in_website>1</show_in_website>
+				            <show_in_store>1</show_in_store>                    
+				        </magicmirror_position>
+				        <magicmirror_language translate="label">
+				            <label>Admin language</label>
+				            <frontend_type>select</frontend_type>
+				            <source_model>virtooal_magicmirror/language</source_model>     
+				            <sort_order>50</sort_order>
+				            <show_in_default>1</show_in_default>
+				            <show_in_website>1</show_in_website>
+				            <show_in_store>1</show_in_store>                    
+				        </magicmirror_language>
+				    </fields>                         
+                </magicmirror_settings>
+            </groups>
+		</magicmirror_options>
+	</sections>
+</config>

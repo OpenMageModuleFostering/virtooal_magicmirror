@@ -1,0 +1,20 @@
+<?php 
+
+echo $this->getChildHtml('child');
+
+$username = Mage::getStoreConfig('magicmirror_options/magicmirror_settings/magicmirror_username');
+$api_key = Mage::getStoreConfig('magicmirror_options/magicmirror_settings/magicmirror_apikey');
+$product_id = Mage::registry('current_product')->getId();  
+ 
+$locale = substr(Mage::app()->getLocale()->getLocaleCode(),0,2);
+
+?>
+<script charset="utf-8" id="gallery-widget" src="https://widget.virtooal.com/magicmirror.php?uname=<?php echo $username; ?>&apikey=<?php echo $api_key; ?>&lang=<?php echo $locale; ?>&pid=<?php echo $product_id; ?>"></script>
+
+<div class="virtooal-widget">
+    <div class="gw-container" 
+         data-modal_color = "#31859b"
+         data-plus_color = "#b7dde8"
+         data-modal_opacity = "0.8"
+         data-thumbwidth="73"></div>
+</div>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <menu>
+        <virtooal_magicmirror_tab module="virtooal_magicmirror" translate="title">
+            <title>Magic Mirror</title>
+            <sort_order>10000</sort_order>
+            <children>
+                <index module="virtooal_magicmirror" translate="title">
+                    <title>Configuration</title>
+                    <sort_order>2</sort_order>
+                    <action>adminhtml/magicmirror</action>
+                </index>
+                <help module="virtooal_magicmirror" translate="title">
+                    <title>Help</title>
+                    <sort_order>3</sort_order>
+                    <action>adminhtml/magicmirror/help</action>
+                </help>
+                <dashboard module="virtooal_magicmirror" translate="title">
+                    <title>Dashboard</title>
+                    <sort_order>1</sort_order>
+                    <action>adminhtml/magicmirror/dashboard</action>
+                </dashboard>
+            </children>
+        </virtooal_magicmirror_tab>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <custom translate="title" module="virtooal_magicmirror">
+                        <title>Magic Mirror Controller</title>
+                        <sort_order>-100</sort_order>
+                        <children>
+                            <index translate="title">
+                                <title>Index Action</title>
+                                <sort_order>2</sort_order>
+                            </index>
+                            <help translate="title">
+                                <title>Help Action</title>
+                                <sort_order>3</sort_order>
+                            </help>
+                            <dashboard translate="title">
+                                <title>Dashboard Action</title>
+                                <sort_order>1</sort_order>
+                            </dashboard>			
+                        </children>
+                    </custom>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
