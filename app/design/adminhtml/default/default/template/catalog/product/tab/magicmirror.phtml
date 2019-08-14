@@ -1,8 +1,10 @@
 <?php 
 $_product = $this->getProduct();
+
 $has_real_image_set = ($_product->getSmallImage() != null && $_product->getSmallImage() != "no_selection");
 
 $api_key = Mage::getStoreConfig('magicmirror_options/magicmirror_settings/magicmirror_apikey');
+
 $langcode = Mage::getStoreConfig('magicmirror_options/magicmirror_settings/magicmirror_language');
 ?>
 
@@ -162,7 +164,7 @@ $langcode = Mage::getStoreConfig('magicmirror_options/magicmirror_settings/magic
       	callbackParamName: "callback",
       	parameters: {
 			img : '<?php echo $has_real_image_set?$_product->getImageUrl():''; ?>',
-			api_key : '<?php echo $apikey; ?>',
+			api_key : '<?php echo $api_key; ?>',
 			product_id : '<?php echo $_product->getId() ?>',
 			iframe : 1,
 		},

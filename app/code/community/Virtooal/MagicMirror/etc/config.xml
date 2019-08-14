@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Virtooal_MagicMirror>
-            <version>1.0.0</version>
+            <version>1.0.1</version>
         </Virtooal_MagicMirror>
     </modules>
     <global>

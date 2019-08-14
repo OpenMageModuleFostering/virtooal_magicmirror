@@ -56,38 +56,38 @@
 				<h1>'.$this->__('What is Magic Mirror?').'</h1>
 				<div style="clear: both;">
 					<div style="float: left; width: 680px;">
-						<p>The Magic Mirror add-ons from Virtooal allow your 
+						<p>'.$this->__('The Magic Mirror add-ons from Virtooal allow your 
 						customers to try products using their own photo. Your 
 						conversions will grow and the number of complaints and 
-						returns will be effectively reduced.</p>
+						returns will be effectively reduced.').'</p>
 						<br />
 						<h2>'.$this->__('How it works').'</h2>
 						
-						<p><strong>Setup:</strong></p>
+						<p><strong>'.$this->__('Setup').':</strong></p>
 						<ol style="list-style-type: decimal; margin-left: 30px;">
-							<li>Go to Magic Mirror > Dashboard</li>
-							<li>Click on "Register & Subscribe" button</li>
-							<li>Choose the modules you want to use, choose payment type and fill in the registration form.</li>
-							<li>After subscribing and registering log in to your Magic Mirror Admin.</li>
-							<li>Setup your widget\'s colors, size and language.</li>
+							<li>'.$this->__('Go to Magic Mirror > Dashboard').'</li>
+							<li>'.$this->__('Click on "Register & Subscribe" button').'</li>
+							<li>'.$this->__('Choose the modules you want to use, choose payment type and fill in the registration form.').'</li>
+							<li>'.$this->__('After subscribing and registering log in to your Magic Mirror Admin.').'</li>
+							<li>'.$this->__('Set your widget\'s colors, size and language.').'</li>
+							<li>'.$this->__('Copy your API key and username into Magic Mirror > Configuration').'</li>
 						</ol>
 						<br />
-						<p><strong>Products integration:</strong></p>
+						<p><strong>Products integration').':</strong></p>
 						<ol style="list-style-type: decimal; margin-left: 30px;">
-							<li>Go to Catalog > Manage Products and choose one of your products</li>
-							<li>On the left side navigation click on "Add Magic Mirror"</li>
-							<li>Login to your Magic Mirror Admin if you not logged in yet.</li>
-							<li>Choose from your active moduls and setup the product.</li>
+							<li>'.$this->__('Go to Catalog > Manage Products and choose one of your products').'</li>
+							<li>'.$this->__('On the left side navigation click on "Add Magic Mirror"').'</li>
+							<li>'.$this->__('Login to your Magic Mirror Admin if you not logged in yet.').'</li>
+							<li>'.$this->__('Choose from your active moduls and setup the product.').'</li>
 							
 						</ol>
 						
 					</div>
 					<div style="float: right; width: 200px;">
-						<img src="//setup.virtooal.com/assets/img/logo.png" alt="" />
+						<img src="//setup.virtooal.com/assets/img/logo.png" alt="Virtooal" />
 					</div>
 				</div>
-			</div>
-			';
+			</div>';
 			$block = $this->getLayout()
 						   ->createBlock('core/text', 'magicmirror-help-block')
 						   ->setText($html);
