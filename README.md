@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 The Magic Mirror widget from Virtooal allow your customers to try products virtually using their own photos. 
