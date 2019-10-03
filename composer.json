@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Virtooal_MagicMirror",
+    "name": "OpenMageModuleFostering\/Virtooal_MagicMirror",
     "type": "magento-module",
     "license": "Open-Software-License-(OSL-3.0)",
     "homepage": "",
     "description": "The Magic Mirror widget from Virtooal allow your customers to try products virtually using their own photos. ",
     "authors": [
-    {
-        "name": "Virtooal",
-        "email": "info@virtooal.com"
-    }
-],
+        {
+            "name": "Virtooal",
+            "email": "info@virtooal.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
